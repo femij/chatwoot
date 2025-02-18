@@ -64,7 +64,7 @@
       "url": "heroku/ruby"
     },
     {
-      "url": "heroku/nodejs#282"
+      "url": "https://github.com/heroku/heroku-buildpack-nodejs#v282"
     }
   ],
   "environments": {
