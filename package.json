@@ -150,7 +150,7 @@
     "webpack-dev-server": "^3"
   },
   "engines": {
-    "node": "20.18.3",
+    "node": "20.x",
     "npm": ">=6.x"
    
   },
