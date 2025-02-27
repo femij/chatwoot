@@ -33,14 +33,6 @@
       "description": "Installation method used for Chatwoot.",
       "value": "heroku"
     },
-    "DATABASE_URL": {
-      "description": "URL to Postgres database.",
-      "value": "change"
-    },
-    "REDIS_URL": {
-      "description": "URL to Redis database.",
-      "value": "change"
-    },
     "REDIS_OPENSSL_VERIFY_MODE":{
       "description": "OpenSSL verification mode for Redis connections. ref https://help.heroku.com/HC0F8CUS/redis-connection-issues",
       "value": "none"
@@ -58,6 +50,14 @@
   },
   "stack": "heroku-24",
   "image": "heroku/ruby",
+  "addons": [
+    {
+      "plan": "heroku-redis:mini"
+    },
+    {
+      "plan": "heroku-postgresql:essential-0"
+    }
+  ],
   "stack": "heroku-24",
   "buildpacks": [
     {
