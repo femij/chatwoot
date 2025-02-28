@@ -25,6 +25,14 @@
       "description": "Environment for rails middleware.",
       "value": "production"
     },
+    "DATABASE_URL": {
+      "description": "URL to Postgres database.",
+      "value": "change"
+    },
+    "REDIS_URL": {
+      "description": "URL to Redis database.",
+      "value": "change"
+    },
     "FRONTEND_URL": {
       "description": "Public root URL of the Chatwoot installation. This will be used in the emails.",
       "value": "https://CHANGE.herokuapp.com"
@@ -50,14 +58,7 @@
   },
   "stack": "heroku-24",
   "image": "heroku/ruby",
-  "addons": [
-    {
-      "plan": "heroku-redis:mini"
-    },
-    {
-      "plan": "heroku-postgresql:essential-0"
-    }
-  ],
+  
   "stack": "heroku-24",
   "buildpacks": [
     {
